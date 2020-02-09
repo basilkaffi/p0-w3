@@ -7,6 +7,7 @@ function palindrome (kata){
 	kata === reverseKata ? condition = true : condition = false
 	return condition
 }
+
 console.log(palindrome('katak')); // true
 console.log(palindrome('blanket')); // false
 console.log(palindrome('civic')); // true
