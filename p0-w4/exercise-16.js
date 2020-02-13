@@ -1,6 +1,9 @@
 function graduates (students) {
   var result = {}
   for(var i = 0; i< students.length; i++){
+    result[students[i].class] = []
+  }
+  for(var i = 0; i< students.length; i++){
     if(students[i].score>75){
       var obj = {
         name: students[i].name,
