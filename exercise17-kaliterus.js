@@ -23,8 +23,7 @@ function kaliTerusRekursif(angka) {
 	bagian*=kaliTerusRekursif(angka-pengurang)
 	if(bagian>=10){
 		angka = bagian
-		bagian = 1
-		return bagian*=kaliTerusRekursif(angka)
+		return kaliTerusRekursif(angka)
 	}
 	else return bagian
 }
